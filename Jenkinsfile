@@ -21,5 +21,12 @@ pipeline {
                 bat "mvn package"
             }
         }
+        stage('--Deploy dacpac--') {
+            steps {
+                bat cd C:\
+		bat cd C:\Git\pknowldege-my-app
+		bat BuildDACPAC.bat
+            }
+        }
     }
 }
