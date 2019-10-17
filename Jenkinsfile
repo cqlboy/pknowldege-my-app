@@ -23,9 +23,9 @@ pipeline {
         }
         stage('--Deploy dacpac--') {
             steps {
-                bat "cd /"
-		bat "cd C:\Git\pknowldege-my-app"
-		bat "BuildDACPAC.bat"
+                cd /
+		cd C:\Git\pknowldege-my-app
+		BuildDACPAC.bat
             }
         }
     }
