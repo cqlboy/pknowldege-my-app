@@ -1,6 +1,11 @@
 pipeline {
     agent any
     stages {
+        stage('--START PIPELINE--') {
+            steps {
+                echo "Begin pipeline execution"
+            }
+        }
         stage('---clean---') {
             steps {
                 bat "mvn clean"
