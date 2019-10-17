@@ -23,7 +23,7 @@ pipeline {
         }
         stage('--deploy--') {
             steps {
-		bat "C:\Git\pknowldege-my-app\BuildDACPAC.bat"
+		bat 'C:\Git\pknowldege-my-app\BuildDACPAC.bat'
             }
         }
     }
