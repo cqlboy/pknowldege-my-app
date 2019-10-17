@@ -21,9 +21,9 @@ pipeline {
                 bat "mvn package"
             }
         }
-        stage('--Deploy dacpac--') {
+        stage('--deploy--') {
             steps {
-		cmd C:\Git\pknowldege-my-app\BuildDACPAC.bat
+		bat "C:\Git\pknowldege-my-app\BuildDACPAC.bat"
             }
         }
     }
